@@ -1,6 +1,7 @@
 package com.example.kotlinmovie.ui.main.home
 
 import android.content.Context
+import android.content.Intent.getIntent
 import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
@@ -11,6 +12,8 @@ import com.example.kotlinmovie.R
 import com.example.kotlinmovie.common.BaseAdapter
 import com.example.kotlinmovie.models.MovieInfoModel
 import com.example.kotlinmovie.models.MovieListModel
+import com.example.kotlinmovie.ui.detail.DetailActivity
+import com.example.kotlinmovie.util.AppConstants.Companion.BASE_IMG_URL
 import kotlinx.android.synthetic.main.home_item_layout.view.*
 
 class HomeAdapter(var requestManager: RequestManager) : BaseAdapter() {
@@ -45,15 +48,16 @@ class HomeAdapter(var requestManager: RequestManager) : BaseAdapter() {
 
         fun bindView(model : MovieInfoModel) {
 
-            requestManager.load("https://i.ytimg.com/vi/PPNMBYcjYXE/maxresdefault.jpg")
+            requestManager.load(BASE_IMG_URL+ model.poster_path)
                 .into(itemView.image_view)
 
-            itemView.text_view.setMyanmarText(model.title)
+//            itemView.text_view.setMyanmarText(model.title)
 
             itemView.setOnClickListener {
-//                context.startActivity(DetailActivity.getIntent(context,model))
-                Log.d(TAG, "bindView: ");
+                context.startActivity(DetailActivity.getIntent(context, model))
+//                Log.d(TAG, "bindView: ");
             }
         }
     }
 }
+

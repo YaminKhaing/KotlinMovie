@@ -1,9 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="colorPrimary">#6200EE</color>
-    <color name="colorPrimaryDark">#3700B3</color>
-    <color name="colorAccent">#03DAC5</color>
+<!--    <color name="colorPrimaryDark">#3700B3</color>-->
+<!--    <color name="colorAccent">#03DAC5</color>-->
 
     <color name="colorBlack">#000000</color>
     <color name="colorWhite">#ffffff</color>
+    <color name="colorBrown">#8f6256</color>
+    <color name="colorDarkBrown">#5A3E36</color>
+    <color name="colorBrownGrantie">#615550</color>
+    <color name="colorBikingRedDark">#77212E</color>
+    <color name="colorBikingRed">#8c2636</color>
+    <color name="colorBikingRedLight">#a4283f</color>
+
+    <color name="color1">#7a8521</color>
+    <color name="colorPrimaryDark"> #264e36</color>
+    <color name="color3">#47422e</color>
+    <color name="color4">#3c4631</color>
+    <color name="color2">#e6e6e6</color>
+    <color name="colorAccent">#7d2f20</color>
 </resources>

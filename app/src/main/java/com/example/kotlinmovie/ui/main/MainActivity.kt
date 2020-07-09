@@ -40,8 +40,10 @@ class MainActivity : BaseActivity(), MainDelegate {
         bottom_navigation.addItem(profileItem)
 
         //change colors
-        bottom_navigation.accentColor=Color.parseColor("#ffffff")
-        bottom_navigation.inactiveColor=Color.parseColor("#17FFC7")
+        bottom_navigation.accentColor=Color.parseColor("#e6e6e6")
+//        bottom_navigation.inactiveColor=Color.parseColor("#17FFC7")#55aa77
+        bottom_navigation.inactiveColor=Color.parseColor("#99ccad")
+
 
         // Enable the translation inside the CoordinatorLayout
         bottom_navigation.isBehaviorTranslationEnabled = true

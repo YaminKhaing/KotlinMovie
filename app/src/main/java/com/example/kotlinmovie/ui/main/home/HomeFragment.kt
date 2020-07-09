@@ -3,6 +3,7 @@ package com.example.kotlinmovie.ui.main.home
 import android.os.Bundle
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
+import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.RequestManager
@@ -37,8 +38,8 @@ class HomeFragment : BaseFragment(), SmartScrollListener.OnSmartScrollListener {
 
     override fun setUpContents(savedInstanceState: Bundle?) {
         home_recycler.setHasFixedSize(true)
-        home_recycler.layoutManager=LinearLayoutManager(mContext, RecyclerView.VERTICAL, false)
-
+//        home_recycler.layoutManager=LinearLayoutManager(mContext, RecyclerView.VERTICAL, false)
+        home_recycler.layoutManager=GridLayoutManager(mContext,3, LinearLayoutManager.VERTICAL,false)
         home_recycler.adapter = adapter
         home_recycler.addOnScrollListener(smartScrollListener)
 

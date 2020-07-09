@@ -20,9 +20,9 @@ class TestUtil {
     val video=false
     val vote_average=8
 
-    val MOVIE_INFO_MODEL=MovieInfoModel(poster_path, adult, overview, release_date,
-        genre_ids, id, origin_title, origin_language, title, backdrop_path, popularity, vote_count, video, vote_average)
-    val MOVIE_LIST_MODEL=MovieListModel(1, 649, 33, listOf(MOVIE_INFO_MODEL));
+//    val MOVIE_INFO_MODEL=MovieInfoModel(poster_path, adult, overview, release_date,
+//        genre_ids, id, origin_title, origin_language, title, backdrop_path, popularity, vote_count, video, vote_average)
+//    val MOVIE_LIST_MODEL=MovieListModel(1, 649, 33, listOf(MOVIE_INFO_MODEL));
 //
 //    private fun List(size: MovieInfoModel): List<MovieInfoModel> {
 //
@@ -43,7 +43,7 @@ class TestUtil {
     val video1=false
     val vote_average1=7
 
-    val MOVIE_INFO_MODEL1=MovieInfoModel(poster_path1, adult1, overview1, release_date1,
-        genre_ids1, id1, origin_title1, origin_language1, title1, backdrop_path1, popularity1, vote_count1, video1, vote_average1)
+//    val MOVIE_INFO_MODEL1=MovieInfoModel(poster_path1, adult1, overview1, release_date1,
+//        genre_ids1, id1, origin_title1, origin_language1, title1, backdrop_path1, popularity1, vote_count1, video1, vote_average1)
 
 }

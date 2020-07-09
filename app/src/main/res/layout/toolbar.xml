@@ -5,10 +5,10 @@
     android:id="@+id/toolbar"
     android:layout_width="match_parent"
     android:layout_height="?attr/actionBarSize"
-    android:background="@color/colorWhite"
+    android:background="@color/colorPrimaryDark"
     app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
-    app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
-
+    app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+    app:layout_scrollFlags="scroll|enterAlways">
 <com.example.kotlinmovie.custom_control.MyanBoldTextView
     android:id="@+id/toolbar_text"
         android:layout_width="match_parent"
